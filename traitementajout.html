@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue Vêtements Afritudes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-film mr-2"></i>
+                Catalogue Maison de la Mode
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-left align-items-left" data-parallax="scroll" data-image-src="img/hero.jpg"></div>
+<div style="text-align:left">
+    <div class="container-fluid tm-mt-60">
+        <div class="row tm-mb-50">
+            <div class="col-lg-4 col-12 mb-5">
+            <form id="contact-form" action="" method="POST" class="tm-contact-form mx-auto">
+    
+        <div class="form-group">
+        <label for="categorie">Catégorie du produit: </label>
+        <select  name ="categorie" class="form-control" id="selectcategorie" >
+        
+            <option value="" disabled selected hidden>Catégorie de l'image </option>
+            <option value="Robe">Robe</option>
+            <option value="Ensemble">Ensemble</option>
+            <option value="Chemise">Chemise</option>
+        </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="nom"> Nom du produit: </label>
+            <input type="text" name="nom" class="form-control" id="nomproduit">
+        </div>
+    
+        <div class="form-group">
+            
+            <label for="selection">Selectionnez l'image: </label>
+            <input type="file" name="image" accept=".jpg, .jpeg, .png" id="photoproduit" required>
+        </div>
+
+        <div class="form-group">
+            <label for="prix">Prix du produit: </label>
+            <input type="text" name="prix" class="form-control" id="prixproduit">
+        </div>
+
+        <div class="form-group">
+            <label for="expedition">Détails d'expédition:</label>
+            <input type="date" name="date" class="form-control" id="dateexpedition">
+        </div>
+
+        <div class="form-group">
+            <label for="reduction">Offre de réduction: </label>
+            <select name="reduction" class="form-control" id="reductionproduit">
+                <option value="" disabled selected hidden>Prix de réduction </option>
+                <option value="cinq">5%</option>
+                <option value="dix">10%</option>
+                <option value="vingt">20%</option>
+                <option value="trente">30%</option>
+                <option value="zero">Aucune réduction possible</option>
+                
+            </select>
+        </div>
+
+        <p>
+            <input type="submit" value="Terminé">
+        </p>
+   
+            </form>      
+            </div>
+        </div>
+
+        </div>
+      </div>
+    <!-- container-fluid, tm-container-content -->
+
+    
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
+        <div class="container-fluid tm-container-small">
+            
+            
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
